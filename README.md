@@ -1,2 +1,2 @@
-# mirror-legend-game.github.io
+# mirrorlegendgame.github.io
 a little game
