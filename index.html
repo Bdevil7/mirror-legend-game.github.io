@@ -840,15 +840,16 @@
                     ]
                 },
                 {
-                    id: 8,
-                    name: "教室",
-                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><rect fill='%23666' width='800' height='450'/></svg>",
+                    id: 6,
+                    name: "教师办公室",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><rect fill='%23555' width='800' height='450'/></svg>",
                     dialogues: [
                         {
-                            character: "旁白",
-                            text: "日记上写着：'快跑！！！！！！",
+                            character: "陈老师",
+                            text: "失踪的学生叫李明，是高三(2)班的学生。他平时很安静，不太与人交往。昨天放学后就没再见过他。",
                             choices: [
-                                { text: "合上日记", next: 1 }
+                                { text: "询问镜中仙的详情", next: 5 },
+                                { text: "感谢老师并离开", next: 0 }
                             ]
                         }
                     ]
@@ -869,6 +870,20 @@
                     ]
                 },
                 {
+                    id: 8,
+                    name: "教室",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><rect fill='%23666' width='800' height='450'/></svg>",
+                    dialogues: [
+                        {
+                            character: "旁白",
+                            text: "日记上写着：'快跑！！！！！！",
+                            choices: [
+                                { text: "合上日记", next: 1 }
+                            ]
+                        }
+                    ]
+                },
+                {
                     id: 9,
                     name: "教师办公室",
                     background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><rect fill='%23666' width='800' height='450'/></svg>",
@@ -877,7 +892,7 @@
                             character: "陈老师",
                             text: "在学校后面，有一个地下室，现在已经被封死了，进不去的。",
                             choices: [
-                                { text: "询问镜中仙的详情", next: 5, evidence: "镜中仙传说" },
+                                { text: "询问镜中仙的详情", next: 5 },
                                 { text: "感谢老师并离开", next: 0 }
                             ]
                         }
@@ -937,7 +952,7 @@
                     dialogues: [
                         {
                             character: "旁白",
-                            text: 你打破了镜子，镜子破碎里面飘出了黑雾
+                            text: "你打破了镜子，镜子破碎里面飘出了黑雾",
                             choices: [
                                 { text: "END", next: 25 }
                            ]
@@ -951,7 +966,7 @@
                     dialogues: [
                         {
                             character: "镜中仙",
-                            text:"我做了坏事？别搞笑了,当初是谁把我囚禁在这里的,你们不都很清楚吗？"
+                            text: "我做了坏事？别搞笑了,当初是谁把我囚禁在这里的,你们不都很清楚吗？",
                             choices: [
                                 { text: "因为一场意外", next: 15, evidence: "镜中仙的过去" },
                                 { text: "因为你自愿选择", next: 16 }
@@ -966,7 +981,7 @@
                     dialogues: [
                         {
                             character: "镜中仙",
-                            text: "接近了...但还不够。这是一场仪式的结果，一场为了永葆青春而进行的黑暗仪式。但出了差错，我的灵魂被困在了镜中。"
+                            text: "接近了...但还不够。这是一场仪式的结果，一场为了永葆青春而进行的黑暗仪式。但出了差错，我的灵魂被困在了镜中。",
                             choices: [
                                 { text: "谁进行了这个仪式？", next: 17 },
                                 { text: "如何解救你？", next: 18 },
@@ -982,7 +997,7 @@
                     dialogues: [
                         {
                             character: "镜中仙",
-                            text:"没搞清楚就不要来这里，你在找死。"
+                            text: "没搞清楚就不要来这里，你在找死。",
                             choices: [
                                 { text: "因为一场意外", next: 15, evidence: "镜中仙的过去" },
                                 { text: "因为你自愿选择", next: 16 }
@@ -997,7 +1012,7 @@
                     dialogues: [
                         {
                             character: "镜中仙",
-                            text: "是你们，是你们所有人，是这个学校的所有，一切！！！！"
+                            text: "是你们，是你们所有人，是这个学校的所有，一切！！！！",
                             choices: [
                                 { text: "如何解救你？", next: 18 },
                                 { text: "那些学生在哪里？", next: 19 }
@@ -1012,7 +1027,7 @@
                     dialogues: [
                         {
                             character: "镜中仙",
-                            text: "我为什么要告诉你。"
+                            text: "我为什么要告诉你。",
                             choices: [
                                { text: "谁进行了这个仪式？", next: 17 },
                                 { text: "那些学生在哪里？", next: 19 }
@@ -1043,7 +1058,7 @@
                     dialogues: [
                         {
                             character: "镜中仙",
-                            text: "那就来吧！！"
+                            text: "那就来吧！！",
                             choices: [
                                 { text: "不，这不对劲", next: 21 },
                                 { text: "提出质疑", next: 22 }
@@ -1052,58 +1067,72 @@
                     ]
                 },
                 {
-                    身份证明（identification）: 21,
-                    名字: "镜中世界",
-                    背景: “数据:image/SVG+XML；utf8，< SVG xmlns = ' http://www . w3 . org/2000/SVG ' width = ' 800 ' height = ' 450 ' view box = ' 0 0 800 450 ' > < defs > < radial gradient id = ' mirror grad 4 ' CX = ' 50% ' cy = ' 50% ' r = ' 50% ' FX = ' 50% ' fy = ' 50% ' > < stop offset = ' 0% ' style = ' stop-colorstop-opacity:1 '/> < stop offset = ' 100% ' style = ' stop-color:RGB(0，0，0)；stop-opacity:1 '/> </radial gradient > </defs > < rect fill = ' URL(# mirror grad 4)' width = ' 800 ' height = ' 450 '/> </SVG > ",
-                    对话: [
+                    id: 21,
+                    name: "镜中世界",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><defs><radialGradient id='mirrorGrad4' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' style='stop-color:rgb(0,50,50);stop-opacity:1' /><stop offset='100%' style='stop-color:rgb(0,0,0);stop-opacity:1' /></radialGradient></defs><rect fill='url(#mirrorGrad4)' width='800' height='450'/></svg>",
+                    dialogues: [
                         {
-                            性格；角色；字母: "镜中仙",
-                            文本: ".......快来吧"
-选择:[
-                                { 文本: "是的,我想见他们", 然后: 20 },
-                                { 文本: "提出质疑", 然后: 22 }
+                            character: "镜中仙",
+                            text: ".......快来吧",
+                            choices: [
+                                { text: "是的,我想见他们", next: 20 },
+                                { text: "提出质疑", next: 22 }
                             ]
                         }
                     ]
                 },
                 {
-                    身份证明（identification）: 24,
-                    名字: "洗手间",
-                    背景: “数据:image/SVG+XML；utf8，< SVG xmlns = ' http://www . w3 . org/2000/SVG ' width = ' 800 ' height = ' 450 ' view box = ' 0 0 800 450 ' > < defs > < radial gradient id = ' mirror grad 4 ' CX = ' 50% ' cy = ' 50% ' r = ' 50% ' FX = ' 50% ' fy = ' 50% ' > < stop offset = ' 0% ' style = ' stop-colorstop-opacity:1 '/> < stop offset = ' 100% ' style = ' stop-color:RGB(0，0，0)；stop-opacity:1 '/> </radial gradient > </defs > < rect fill = ' URL(# mirror grad 4)' width = ' 800 ' height = ' 450 '/> </SVG > ",
-                    对话: [
+                    id: 22,
+                    name: "言辩对决",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><defs><radialGradient id='debateGrad' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' style='stop-color:rgb(50,0,0);stop-opacity:1' /><stop offset='100%' style='stop-color:rgb(0,0,0);stop-opacity:1' /></radialGradient></defs><rect fill='url(#debateGrad)' width='800' height='450'/></svg>",
+                    dialogues: [
                         {
-                            性格；角色；字母: "旁白",
-                            文本: 你成功了,成功驱逐了镜中仙,这个学校也终于安全了
-选择:[
-                                { 文本: "感谢游玩", 然后: 0 }
+                            character: "镜中仙",
+                            text: "你竟敢质疑我？那么让我们来一场对决吧！用你收集到的证据来反驳我的言论!",
+                            choices: [
+                                { text: "开始言辩对决", next: 23, action: "startDebate" }
                             ]
                         }
                     ]
                 },
                 {
-                    身份证明（identification）: 25,
-                    名字: "洗手间",
-                    背景: “数据:image/SVG+XML；utf8，< SVG xmlns = ' http://www . w3 . org/2000/SVG ' width = ' 800 ' height = ' 450 ' view box = ' 0 0 800 450 ' > < defs > < radial gradient id = ' mirror grad 4 ' CX = ' 50% ' cy = ' 50% ' r = ' 50% ' FX = ' 50% ' fy = ' 50% ' > < stop offset = ' 0% ' style = ' stop-colorstop-opacity:1 '/> < stop offset = ' 100% ' style = ' stop-color:RGB(0，0，0)；stop-opacity:1 '/> </radial gradient > </defs > < rect fill = ' URL(# mirror grad 4)' width = ' 800 ' height = ' 450 '/> </SVG > ",
-                    对话: [
+                    id: 23,
+                    name: "言辩对决",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><defs><radialGradient id='debateGrad2' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' style='stop-color:rgb(0,50,0);stop-opacity:1' /><stop offset='100%' style='stop-color:rgb(0,0,0);stop-opacity:1' /></radialGradient></defs><rect fill='url(#debateGrad2)' width='800' height='450'/></svg>",
+                    dialogues: [
                         {
-                            性格；角色；字母: "旁白",
-                            文本: 唯一一次的失败机会,你死了
-                            选择:[
-                                { 文本: "重新选择", 然后: 10 }
+                            character: "镜中仙",
+                            text: "你无法击败我！我在这里已经几十年了！",
+                            choices: [
+                                { text: "使用证据反驳", next: 24, action: "debateSuccess" }
                             ]
                         }
                     ]
                 },
                 {
-                    身份证明（identification）: 22,
-                    名字: "言辩对决",
-                    背景: “数据:image/SVG+XML；utf8，< SVG xmlns = ' http://www . w3 . org/2000/SVG ' width = ' 800 ' height = ' 450 ' view box = ' 0 0 800 450 ' > < defs > < radial gradient id = ' debate grad ' CX = ' 50% ' cy = ' 50% ' r = ' 50% ' FX = ' 50% ' fy = ' 50% ' > < stop offset = ' 0% ' style = ' stop-colorstop-opacity:1 '/> < stop offset = ' 100% ' style = ' stop-color:RGB(0，0，0)；stop-opacity:1 '/> </radial gradient > </defs > < rect fill = ' URL(# debate grad)' width = ' 800 ' height = ' 450 '/> </SVG > ",
-                    对话: [
+                    id: 24,
+                    name: "洗手间",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><defs><radialGradient id='mirrorGrad4' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' style='stop-color:rgb(0,50,50);stop-opacity:1' /><stop offset='100%' style='stop-color:rgb(0,0,0);stop-opacity:1' /></radialGradient></defs><rect fill='url(#mirrorGrad4)' width='800' height='450'/></svg>",
+                    dialogues: [
                         {
-                            性格；角色；字母: "镜中仙",
-                            文本: "你竟敢质疑我？那么让我们来一场对决吧！用你收集到的证据来反驳我的言论!",
-                            选择: [
-                                { 文本: "开始言辩对决", 然后: 23, 行为: "开始辩论" }
+                            character: "旁白",
+                            text: "你成功了,成功驱逐了镜中仙,这个学校也终于安全了",
+                            choices: [
+                                { text: "感谢游玩", next: 0 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 25,
+                    name: "洗手间",
+                    background: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><defs><radialGradient id='mirrorGrad4' cx='50%' cy='50%' r='50%' fx='50%' fy='50%'><stop offset='0%' style='stop-color:rgb(0,50,50);stop-opacity:1' /><stop offset='100%' style='stop-color:rgb(0,0,0);stop-opacity:1' /></radialGradient></defs><rect fill='url(#mirrorGrad4)' width='800' height='450'/></svg>",
+                    dialogues: [
+                        {
+                            character: "旁白",
+                            text: "唯一一次的失败机会,你死了",
+                            choices: [
+                                { text: "重新选择", next: 10 }
                             ]
                         }
                     ]
@@ -1112,29 +1141,29 @@
         };
 
         // 初始化游戏
-        文件.getElementById('开始-btn ').addEventListener(点击, 开始游戏);
+        document.getElementById('start-btn').addEventListener('click', startGame);
         
-        功能 开始游戏() {
-            文件.getElementById('开始屏幕').风格.显示 = '无';
-            负载场景(0);
+        function startGame() {
+            document.getElementById('start-screen').style.display = 'none';
+            loadScene(0);
         }
         
-        功能 负载场景(场景Id) {
-            常数 事件 = 游戏脚本.景色.发现(s => s.身份证明（identification） === 场景Id);
-            如果 (!事件) 返回;
+        function loadScene(sceneId) {
+            const scene = gameScript.scenes.find(s => s.id === sceneId);
+            if (!scene) return;
             
-            游戏状态.当前场景 = 场景Id;
+            gameState.currentScene = sceneId;
             
             // 更新背景
-            文件.getElementById(场景-背景').科学研究委员会 = 事件.背景;
+            document.getElementById('scene-bg').src = scene.background;
             
             // 加载对话
-            加载对话(事件.对话[0]);
+            loadDialogue(scene.dialogues[0]);
         }
         
-        功能 加载对话(对话) {
-            常数 对话文本 = 文件.getElementById('对话-文本');
-            常数 选择容器 = 文件.getElementById('选择-容器');
+        function loadDialogue(dialogue) {
+            const dialogueText = document.getElementById('dialogue-text');
+            const choicesContainer = document.getElementById('choices-container');
             
             // 显示对话文本
             dialogueText.textContent = `${dialogue.character}：${dialogue.text}`;
@@ -1155,6 +1184,8 @@
                     
                     if (choice.action === 'startDebate') {
                         startDebate();
+                    } else if (choice.action === 'debateSuccess') {
+                        debateSuccess();
                     } else {
                         loadScene(choice.next);
                     }
@@ -1196,7 +1227,7 @@
             
             // 加载成功场景
             alert("言辩成功！你揭穿了镜中仙的谎言！");
-            loadScene(24); // 假设24是成功场景ID
+            loadScene(24); // 成功场景ID
         }
         
         function debateFail() {
